@@ -1,0 +1,157 @@
+General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 3;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+h1 {
+    color: #d90000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Info Section Styles */
+.info_edu {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.info_edu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info_edu li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.info_edu i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Image Styles */
+.company-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.social-links li a {
+    font-size: 20px;
+    color: #555;
+}
+
+.social-links li a:hover {
+    color: #007bff;
+}
+
+.footer-rights {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.footer-rights .heart {
+    color: red;
+}
+
+.footer-rights a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-rights a:hover {
+    text-decoration: underline;
+}
