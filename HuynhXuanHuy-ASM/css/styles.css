@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+    
+} 
+body{
+    font-family: arial;
+    padding: 10px;
+    background: #282828;
+}
+
+/*Header*/
+.header{
+    padding: 10px;
+    background: #403d3d;
+    display: flex;
+}
+.header h1 a{
+    font-size: 40px;
+    color: red;
+    text-decoration: none ;
+}
+
+
+/*menu*/
+.top-nav{
+    overflow: hidden;
+    background-color: #131313;   
+}
+/*Định dạng điều hướng*/
+.top-nav a{
+    float: right;
+    display: block;
+    padding: 14px 16px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+}
+/*Thay đổi màu liên kết khi di chuột qua*/
+.top-nav a:hover{
+    color: orangered;
+}
+/*Menu chính*/
+.main-menu{
+    float: left;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+.main-menu li a{
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+}
+/*Thay đổi màu liên kết khi di chuột qua*/
+.main-menu a:hover{
+    color: orangered;
+}
+/*Menu phụ*/
+.main-menu ul.sub-menu{
+    position: absolute;
+    background-color: #131313;
+    padding: 15px 0px;
+    list-style: none;
+    width: 360px;
+    display: none;      /*Ẩn Menu phụ*/
+    z-index: 1;
+    margin-top: 50px;
+    border-top: 1px orangered solid;
+}
+
+.main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+.main-menu ul.sub-menu a{
+    padding: 8px 20px;
+    float: left;
+}
+/*Độ rộng menu phụ*/
+.main-menu ul.sub-menu li{
+    width: 33.333333%;
+    float: left;
+    display: inline-block;
+}
+/*Đường kẻ dưới menu*/
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+/*Thông tin chính*/
+.left-row{
+    float: left;
+    width: 70%;
+    position: relative;
+}
+/*Hiển thị các bộ phim */
+.movie{
+    width: 20%;
+    height: 300px;
+    padding: 0px;
+    margin: 0px 0px 20px 40px;
+    background: #000000;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+.movie-thumbnail{
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.movie-thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+/*Mô tả tên phim*/
+.description {
+    background: transparent;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.39) 4%,#000 87%);
+    bottom: 0;
+    color: #eee;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    
+}
+.description .movie-title{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    left: 3px;
+    bottom: 4px;
+    
+}
+/*Mô tả thời gian phim*/
+.description .info .film-time{
+    bottom: 4px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 14px;
+    right: 3px;
+    border-radius: 2px;
+    position: absolute;
+}
+.description :hover{
+    color: orangered;
+}
+
+/*Thông tin phụ*/
+.right-row{
+    float: left;
+    width: 30%;
+    background-color: #131313;
+}
+
+.intro{
+    color: #fff;
+    background-color: #282828;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+/*Footer*/
+.footer{
+    padding: 10px;
+    text-align: center;
+    background: #131313;
+    margin-top: 10px;
+    color: #fff;
+}
+/*clear float khác sau các cột*/
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/*Hiển thị 1 bộ phim*/
+
+#left-row{
+    float: left;
+    width: 70%;
+    height: auto;
+    background-color: #131313;
+    overflow: auto;   
+}
+
+/*Nền*/
+.container{
+    color: #fff;
+    background-color: #282828;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+/*Hình phim*/
+.movie-con{
+    width: 30%;
+    height: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.movie-con-thumbnail{
+    padding: 0px 20px 0px 20px;
+    position: relative;
+}
+.movie-con-thumbnail img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+/*Tên phim*/
+.title-con {
+    width: 68%;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+    margin-bottom: 20px;
+}
+.header-title {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+}
+/*Thông tin phim*/
+.info-type {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 30px;
+    color: #fff;
+    
+}
+
+.info-type-tag {
+    color: rgba(255, 255, 255, 0.599);
+    font-size: 18px;
+    text-decoration: none;
+}
+.quocgia{
+    color: rgba(255, 255, 255, 0.599);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.actor{  
+    margin-top: 0;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+ }
+.list-button{
+    margin-top: 0;
+    margin-bottom: 0;
+    clear: both;
+}
+/*Nút nhấn xem phim*/
+ a.button{
+    display: inline-block;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+ }
+a.button.watch{
+    background-color: #e46466;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 17px;
+}
+/*Mô tả phim*/
+.review{
+    clear: both;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.review p{
+    text-align: justify;
+    color: #fff;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+/*Thông tin phụ*/
+#right-row{
+    float: left;
+    width: 30%;
+    background-color: #131313;
+    
+}
+
+.intro button{
+    background-color:#e46466 ;
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+}
+
+.intro button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 550;
+}
+
+/*Form Ảnh*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 800px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+/* Số vị trí ảnh */
+.numbertext {
+    font-size: 15px;  
+}
+
+/* Nút Next/Prev */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+/*Form Đăng ký*/
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 450px;
+    height: 30px;
+    margin-top: 6px;
+}
+
+.form{
+    margin-left: 300px;
+}
+#ghichu {
+        height: 80px; 
+    }
+.checkbox-group {
+    border: 1px solid #ccc;
+    height: 30px;
+    padding-top: 3px ;
+    width: 450px;
+    background-color: white;
+    color: #000;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+#Formdangky input[type="submit"] {
+    background-color: #e46466; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+#Formdangky input[type="submit"]:hover {
+    background-color: #d54b4b; 
+}
+
+/*Form Bán hàng*/
+
+table {  
+    width: 100%;  
+    border-collapse:collapse;
+}
+
+th, td {     
+    border: 1px solid rgb(0, 0, 0);  
+    padding: 6px;  text-align: center; 
+    background-color: rgb(233, 79, 79);
+}
+
+#mucgia {
+    width: 200px;
+    margin-bottom: 10px;
+}

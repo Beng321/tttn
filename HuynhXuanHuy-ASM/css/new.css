@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    
+} 
+body{
+    font-family: arial;
+    padding: 10px;
+    background: #e0b4b4;
+}
+
+
+.header{
+    font-size: 15px;
+    color: red;
+    padding: 10px;
+    background: white;
+    display: flex;
+}
+.header h1{
+    font-size: 40px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.menu-nav{
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 0 5px #bbb;
+    list-style: none;
+    background-color: #bbb;
+    height: 50px;
+    font-size: 15px;
+}
+.menu-nav a{
+    color: #111111;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu-nav a:hover{
+    color: orangered;
+}
+
+/*Thông tin chính*/
+.left-row{
+    float: left;
+    width: 70%;
+    position: relative;
+}
+/*Hiển thị phim */
+.movie{
+    width: 20%;
+    height: 300px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 20px 40px;
+    background: #000000;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+}
+
+
+.movie-thumbnail{
+    float: left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.movie-thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+
+.description {
+    background: transparent;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.39) 4%,#000 87%);
+    bottom: 0;
+    color: #eee;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+.description .movie-title{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    left: 3px;
+    bottom: 4px;
+}
+
+.description .info .film-time{
+    bottom: 4px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 14px;
+    right: 3px;
+    border-radius: 2px;
+    position: absolute;
+}
+.description :hover{
+    color: orangered;
+}
+
+/*Thông tin phụ*/
+.right-row{
+    float: left;
+    width: 30%;
+    background-color: #d8e4f4;
+}
+
+.intro{
+    background-color: white;
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    background: white;
+    margin-top: 10px;
+}
+/*clear*/
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+/*movie*/
+
+.movie-con{
+    left: 10px;
+    
+}
+.title-con{
+
+    left: 50%;
+    background-color: aqua; 
+    position: absolute;
+}
+.review{
+    clear: both;
+}
+
+.header-title{
+    
+}
+#left-row{
+    float: left;
+    width: 70%;
+    height: 100%;
+    border: 1px red solid;
+    display: flex;
+    position: relative;
+    overflow: auto;
+}
+#right-row{
+    float: right;
+    width: 30%;
+    background-color: #d8e4f4;
+    
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim1080</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="header">
+    <h1> <a href="index.html">PHIM1080</a></h1>
+   </div>
+   
+   <div class="top-nav">
+        <ul class="main-menu">
+                <li><a href="">Quốc gia</a>
+                    <!--Menu phụ-->
+                    <ul class="sub-menu">
+                        <li><a href="">Mỹ</a></li>
+                        <li><a href="">Hàn Quốc</a></li>
+                        <li><a href="">Nhật Bản</a></li>
+                        <li><a href="">Việt Nam</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Thể Loại</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Hành động</a></li>
+                        <li><a href="">Tình cảm</a></li>
+                        <li><a href="">Hoạt Hình</a></li>
+                        <li><a href="">Hài Hước</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Phim bộ</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Mỹ</a></li>
+                        <li><a href="">Hàn Quốc</a></li>
+                        <li><a href="">Nhật Bản</a></li>
+                        <li><a href="">Việt Nam</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Phim lẻ</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Mỹ</a></li>
+                        <li><a href="">Hàn Quốc</a></li>
+                        <li><a href="">Nhật Bản</a></li>
+                        <li><a href="">Việt Nam</a></li>
+                    </ul>
+                </li>   
+        </ul>
+        <a href="" >Đăng ký</a>
+        <a href="" >Đăng nhập</a>
+    </div>
+    <hr>
+
+    <div class="row">
+            <div id="left-row">
+                <div class="container">
+                    <table>
+                        <caption>CÁC SẢN PHẨM<br>
+                        <select id="mucgia" onchange="locsp()">
+                                <option value="all">Mức giá</option>
+                                <option value="duoi1trieu">Dưới 1 triệu</option>
+                                <option value="1trieu-2trieu">1 triệu - 2 triệu</option>
+                                <option value="tren2trieu">Trên 2 triệu</option>
+                        </select>   
+                        </caption>
+                        
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="chonhet"></th>
+                                <th>Hàng hóa</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Iphone 14</td>
+                                <td>14000000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien1">14000000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Samsung</td>
+                                <td>1750000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien2">1750000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Nokia</td>
+                                <td>750000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien3">750000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Sony Xperia</td>
+                                <td>2350000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien4">2350000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Motorola</td>
+                                <td>4580000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien5">4580000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Oppo</td>
+                                <td>3550000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien6">3550000</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Bphone</td>
+                                <td>7700000</td>
+                                <td><input type="number" class="soluong" value="1" onchange="tinhTong()"></td>
+                                <td id="thanhtien7">7700000</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" align="right"><strong>Tổng</strong></td>
+                                <td id="tonggiatri"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                      
+                    
+                </div>
+            </div>
+        <div id="right-row">
+            <div class="intro">
+                <h2>Trailer</h2>
+                <iframe width="350" height="230" src="https://www.youtube.com/embed/Wt0y8IH63jg" frameborder="0"></iframe>
+                <p>Spider-Man</p>
+            </div>
+            <div class="intro">
+                <h2>Follow me</h2>
+                <img width="10%" src="images/Facebook.jpg" alt="">
+            </div>
+            <div class="intro">
+                <h2>Liên hệ</h2>
+                <p>Điện thoại: 123456789</p>
+                <p>Email: 20H1120222@ut.edu.vn</p>
+            </div>  
+            <div class="intro">
+                <button><a href="anh.html">Ảnh</a></button>
+                <button><a href="dangky.html">Đăng ký</a></button>
+                <button><a href="banhang.html">Bán hàng</a></button>
+            </div>  
+        </div>   
+    </div>
+    
+    <div class="footer">
+        <h4>Website xem phim</h4>
+    </div> 
+    <script src="js/javascript.js"></script>
+</body>
+</html>
